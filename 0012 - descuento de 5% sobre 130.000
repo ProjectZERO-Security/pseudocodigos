@@ -1,0 +1,47 @@
+Proceso EJERCICIO_0012
+	
+	// 	NOMBRE				:	Esteban Aros Castillo
+	//	N° PREGUNTA			:	0012
+	//	PREGUNTA			:	Se trata de escribir el algoritmo que permite
+	//							emitir la factura correspondiente a una compra
+	//							de una articulo determinado, del que se adquieren
+	//							una o varias unidades. El IVA es del 19% y si el
+	//							precio bruto (precio venta más IVA) es mayor que
+	//							$130.000 se debe de realizar un descuento del 5%.
+	//	DATOS DE ENTRADA	:	
+	//	PROCEDIMIENTO		:	
+	//	DATOS DE SALIDA		:
+	
+	Definir S como Caracter;
+	
+	Repetir
+		Limpiar Pantalla;
+		
+	Escribir "|-----------------------------------------------|";
+	Escribir "| EJERCICIO_0012                                |";
+	Escribir "| - ALGORITMO DE FACTURA                        |";
+	Escribir "| - EL IVA ES DEL 19%                           |";
+	Escribir "| - SI ES MAYOR DE $130.000 DESCUENTO DEL 5%    |";
+	Escribir "|                                               |";
+	Escribir "|-----------------------------------------------|";
+	Escribir "|                                               |";
+	Escribir "| INGRESE EL VALOR DEL ARTICULO                 |";
+	Leer precioarticulo;
+	
+	precioarticulo <-precioarticulo+precioarticulo;
+	
+	Escribir "DESEA CONTINUAR [1] SI [2] NO";
+	Leer salir;
+	
+	articulos <-articulos+1;
+	descuento5 <-precioarticulo*0.05;
+	totalapagar <-precioarticulo-descuento5;
+	Hasta Que salir=2
+	
+	
+	Escribir "CANTIDAD DE ARTICULOS COMPRADOS: ", articulos;
+	Escribir "FACTURA POR UN MONTO DE          $ ", precioarticulo;
+	Escribir "DESCUENTO 5%                     $ ", descuento5;
+	Escribir "TOTAL A PAGAR                    $ ",totalapagar;
+	
+FinProceso

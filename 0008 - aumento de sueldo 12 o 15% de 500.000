@@ -1,0 +1,47 @@
+Proceso EJERCICIO_0008
+	
+	//	NOMBRE				:	Esteban Aros Castillo			
+	//	N° PREGUNTA			:	0008
+	//	PREGUNTA			:	Diseñar un algoritmo para hallar el aumento al 
+	//							sueldo de un empleado; Si el sueldo es mayor a
+	//							$500.000 su aumento será del 12%, pero si su
+	//							sueldo es menor el aumento será del 15% (Debe
+	//							mostrar cuanto es su sueldo según el %).
+	//	DATOS DE ENTRADA	:	Sueldo de $500.000 aumento de sueldo 12%
+	//							Si el sueldo es menor a $500.000 aumento sera 15%
+	//	PROCEDIMIENTO		:	sueldofinal <-500.000*0.12
+	//							sueldofinal <-500.000*0.15
+	//	DATOS DE SALIDA		:	Mostrar el aumento de sueldo de 500.000
+	
+	Definir sueldo Como Entero;
+	
+	Escribir "|----------------------------------------------|";
+	Escribir "| EJERCICIO 0008                               |";
+	Escribir "| CREAR UN ALGORITMO QUE AUMENTO DE SUELDO     |";
+	Escribir "| SI EL SUELDO ES MAYOR A 500.000 AUMENTO 12%  |";
+	Escribir "| SI EL SUELDO ES MENOR A 500.000 AUMENTO 15%  |";
+	Escribir "|--------------------------------------------- |";
+	Escribir "|                                              |";
+	Escribir "| INGRESE SU SUELDO                            |";
+	Leer sueldo;
+	Escribir "|----------------------------------------------|";
+	Escribir "|                                              |";
+	
+	//FORMULA
+	Si sueldo<500.000 Entonces
+		aumentodesueldo15 <-sueldo*0.15;
+		totalapagar15 <-sueldo+aumentodesueldo15;
+		Escribir "| SUELDO $ ", sueldo;
+		Escribir "| TOTAL AUMENTO 15% $ ", aumentodesueldo15;
+		Escribir "| TOTAL A PAGAR CON AUMENTO $ ", totalapagar15;
+	Sino
+		Si sueldo>500.000 Entonces
+			aumentodesueldo12 <-sueldo*0.12;
+			totalapagar12 <-sueldo+aumentodesueldo12;
+			Escribir "| SUELDO $ ", sueldo;
+			Escribir "| TOTAL AUMENTO 12% $ ", aumentodesueldo12;
+			Escribir "| TOTAL A PAGAR CON AUMENTO $ ", totalapagar12;
+		FinSi
+	FinSi
+		
+FinProceso

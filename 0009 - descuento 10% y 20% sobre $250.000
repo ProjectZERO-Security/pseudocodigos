@@ -1,0 +1,40 @@
+Proceso EJERCICIO_0009
+	
+	//	NOMBRE				:	Esteban Aros Castillo	
+	//	N° PREGUNTA			:	0009
+	//	PREGUNTA			:	Diseñe un algoritmo que calcule el descuento 
+	//							considerando que el monto de pagar es de $250.000
+	//							es de 10% y si es de arriba de $250.000 de 20%
+	//	DATOS DE ENTRADA	:	Descuento 10% de su sueldo $600.000
+	//						:	Descuento 20% de su sueldo 
+	//	PROCEDIMIENTO		:	
+	//	DATOS DE SALIDA		:	
+	
+	Escribir "|----------------------------------------------|";
+	Escribir "| EJERCICIO 0009                               |";
+	Escribir "| CREAR UN ALGORITMO DESCUENTO                 |";
+	Escribir "| - 10% SI EL PAGO ES DE $250.000              |";
+	Escribir "| - 20% SI EL PAGO MÁS DE $250.000             |";
+	Escribir "|----------------------------------------------|";
+	Escribir "|                                              |";
+	Escribir "| INGRESE CANTIDAD A PAGAR                     |";
+	Leer pagar;
+	
+	Si pagar<250000 Entonces
+		descuento10 <-pagar*0.10;
+		totalapagar10 <-pagar-descuento10;
+		Escribir "| TOTAL A PAGAR $ ", pagar;
+		Escribir "| DESCUENTO     $ ", descuento10;
+		Escribir "| TOTAL A PAGAR CON DESCUENTO $ ", totalapagar10;
+	Sino
+		Si pagar>=250000 Entonces
+			descuento20 <-pagar*0.20;
+			totalapagar20 <-pagar-descuento20;
+			Escribir "| TOTAL A PAGAR $ ", pagar;
+			Escribir "| DESCUENTO     $ ", descuento20;
+			Escribir "| TOTAL A PAGAR CON DESCUENTO $ ", totalapagar20;
+		FinSi
+	FinSi
+	
+	
+FinProceso
